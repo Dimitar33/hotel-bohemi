@@ -1,0 +1,32 @@
+.about {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  line-height: 1.7;
+  color: #333;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003366;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #00509e;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .intro,
+  .story,
+  .mission {
+    margin-bottom: 40px;
+  }
+}
