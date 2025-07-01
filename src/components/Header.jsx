@@ -1,13 +1,12 @@
 
 import { Link } from 'react-router-dom';
-import './Header.css';
+import './Header.scss';
 
 function Header() {
   return (
     <header>
-      <h1>Bohemi</h1>
+      <h1> <Link to="/"><img className='logo' src="/assets/Bohemi-logo.png" alt="Bohemi logo" /> Bohemi</Link>  </h1>
       <nav>
-        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/rooms">Rooms</Link>
         <Link to="/amenities">Amenities</Link>
