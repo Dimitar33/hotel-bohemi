@@ -5,11 +5,12 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5px;
+  padding: 10px;
   background: #003366;
   color: white;
 
   h1 {
+    margin: auto 0;
     a {
       font-size: 1.5rem;
       margin: 0;
@@ -52,6 +53,7 @@ header {
       position: relative;
       top: auto;
     }
+    
   }
 
 .logo {
