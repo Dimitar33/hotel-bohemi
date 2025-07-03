@@ -10,30 +10,35 @@ function Rooms() {
       </p>
 
       <div className="room-list">
-        <div className="room-card">
-          <h2>Standard Room</h2>
-          <p>
-            Cozy and well-appointed, our Standard Rooms are perfect for solo travelers or short stays.
-            Enjoy a queen-size bed, work desk, free Wi-Fi, and a modern en-suite bathroom.
-          </p>
-        </div>
-
-        <div className="room-card">
-          <h2>Deluxe Room</h2>
-          <p>
-            A step up in comfort and space, our Deluxe Rooms feature a king-size bed, seating area,
-            premium linens, and stunning views of the city or garden.
-          </p>
-        </div>
-
-        <div className="room-card">
-          <h2>Executive Suite</h2>
-          <p>
-            The ultimate luxury experience. The Executive Suite offers a separate living area, king bed,
-            soaking tub, espresso machine, and VIP amenities for a truly indulgent stay.
-          </p>
-        </div>
+  {[
+    {
+      title: 'Standard Room',
+      desc: 'Cozy and well-appointed...',
+      img: '/assets/Bohemy2.jpg',
+    },
+    {
+      title: 'Deluxe Room',
+      desc: 'A step up in comfort...',
+      img: '/assets/Bohemy2.jpg',
+    },
+    {
+      title: 'Executive Suite',
+      desc: 'The ultimate luxury...',
+      img: '/assets/Bohemy2.jpg',
+    }
+  ].map((room, index) => (
+    <div key={index} className={`room-card ${index % 2 === 1 ? 'reverse' : ''}`}>
+      <div className="room-image">
+        <img src={room.img} alt={room.title} />
       </div>
+      <div className="room-info">
+        <h2>{room.title}</h2>
+        <p>{room.desc}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 }
