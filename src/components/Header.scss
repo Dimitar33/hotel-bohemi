@@ -63,3 +63,22 @@ header {
   margin-left: 20px;
   vertical-align: middle;
 }
+
+.language-switcher {
+  display: flex;
+  gap: 5px;
+
+  img {
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      border-color: yellowgreen;
+    }
+  }
+}
+

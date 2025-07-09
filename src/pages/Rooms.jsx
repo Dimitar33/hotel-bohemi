@@ -1,13 +1,18 @@
 import './Rooms.scss';
+import { useTranslation } from 'react-i18next';
 
 function Rooms() {
+
+  const {t} = useTranslation();
+
   return (
     <div className="rooms">
-      <h1>Rooms & Suites</h1>
-      <p className="intro">
+      <h1>{t('roomsTitle')}</h1>
+      <p className="intro">{t('welcome')}</p>
+      {/* <p className="intro">
         At Bohemi Hotel, every room is designed to offer comfort, style, and a touch of luxury. Choose from
         our range of accommodations to suit your travel needs and personal taste.
-      </p>
+      </p> */}
 
       <div className="room-list">
   {[
@@ -32,8 +37,8 @@ function Rooms() {
         <img src={room.img} alt={room.title} />
       </div>
       <div className="room-info">
-        <h2>{room.title}</h2>
-        <p>{room.desc}</p>
+         <h2>{t('standardRoom')}</h2>
+          <p>{t('standardDesc')}</p>
       </div>
     </div>
   ))}
